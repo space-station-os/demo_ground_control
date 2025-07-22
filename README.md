@@ -31,12 +31,36 @@ git clone https://github.com/space-station-os/demo_ground_control.git
 
 ---
 
-### 2. Install OpenMCT Dependencies
+### 2. Build `openmct-ros`
+
+Navigate to the `openmct-ros` directory inside the cloned project:
+
+```bash
+cd demo_ground_control/openmct-ros
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Build the distribution files:
+
+```bash
+npm run build:dist
+```
+
+This will generate the `dist` folder containing the plugin files needed by OpenMCT.
+
+---
+
+### 3. Install OpenMCT Dependencies
 
 Navigate to the `openmct` directory:
 
 ```bash
-cd demo_ground_control/openmct
+cd ../openmct
 ```
 
 Install the required Node packages:
@@ -47,7 +71,7 @@ npm install
 
 ---
 
-### 3. Start OpenMCT
+### 4. Start OpenMCT
 
 Run the development server:
 
