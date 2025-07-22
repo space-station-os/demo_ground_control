@@ -1,0 +1,59 @@
+# openmct specific ignores for another folder
+*.scssc
+*.zip
+*.gzip
+*.tgz
+*.DS_Store
+*.swp
+
+# Compiled CSS, unless directly added
+*.sass-cache
+*COMPILE.css
+*.css
+*.css.map
+
+# IDE project configuration files
+*.idea
+*.iml
+
+# VSCode settings
+.vscode/settings.json
+
+# Build output directories
+target
+dist
+
+# Node and Bower dependencies
+node_modules
+bower_components
+
+# npm debug logs
+npm-debug.log
+
+# Karma test reports
+report.*.json
+
+# End-to-end test artifacts
+test-results
+html-test-results
+
+# CouchDB scripting artifacts
+src/plugins/persistence/couch/.env.local
+index.html.bak
+
+# Code coverage artifacts
+.nyc_output
+coverage
+codecov
+
+# Ignore MacOS screenshots
+*-darwin.png
+
+# openmct-ros
+openmct-ros/dist
+openmct-ros/node_modules
+openmct-ros/package-lock.json
+
+
+
+
